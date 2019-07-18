@@ -4,16 +4,23 @@ import React from "react"
 
 const Header = ({ siteTitle }) => (
     <header>
-        <div
-            style={{
-                margin: `0 auto`,
-                maxWidth: 960,
-                padding: `1.45rem 1.0875rem`,
-            }}
-        >
+        <div>
             <h1>
                 <Link to="/">{siteTitle}</Link>
             </h1>
+            <p>
+                <ul>
+                    <li>
+                        <Link to="/">Movies</Link>
+                    </li>
+                    <li>
+                        <Link to="/series/">Series</Link>
+                    </li>
+                    <li>
+                        <Link to="/anime/">Anime</Link>
+                    </li>
+                </ul>
+            </p>
         </div>
     </header>
 )
