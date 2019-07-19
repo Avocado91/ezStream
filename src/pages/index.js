@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 
 class IndexPage extends React.Component {
     state = {
-        movie: undefined,
+        moviesList: undefined,
     }
 
     componentDidMount() {
@@ -20,7 +20,7 @@ class IndexPage extends React.Component {
         const response = await apiCall.json()
 
         this.setState({
-            movie: response.original_title,
+            moviesList: response.original_title,
         })
 
         console.log(response.original_title)
@@ -30,7 +30,7 @@ class IndexPage extends React.Component {
         return (
             <Layout>
                 <Link to="/series/">Go to Series</Link>
-                <h2>{this.state.movie}</h2>
+                <h2>{this.state.moviesList}</h2>
             </Layout>
         )
     }
