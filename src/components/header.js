@@ -5,10 +5,10 @@ import React from "react"
 import logo from "../images/logo.png"
 
 const Header = () => (
-    <header>
+    <header className="header">
         <div>
-            <Link to="/">
-                <img src={logo} />
+            <Link>
+                <img className="annoyingImg" src={logo} />
             </Link>
             <p>
                 <ul>
